@@ -1,0 +1,67 @@
+name: Refresh TTY profile
+
+on:
+  push:
+    branches: [main, profile/tty]
+    paths: ["profile/**", "README.md", ".github/workflows/profile.yml"]
+  pull_request:
+    branches: [main]
+    paths: ["profile/**", "README.md", ".github/workflows/profile.yml"]
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tty-profile-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6
+        with:
+          dotnet-version: "10.0.x"
+      - run: dotnet build profile/TtyProfile.csproj --configuration Release
+      - run: dotnet run --project profile/TtyProfile.csproj --configuration Release --no-build -- --self-test
+
+  refresh:
+    needs: validate
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6
+        with:
+          dotnet-version: "10.0.x"
+      - name: Fetch GitHub data and render the terminal
+        run: dotnet run --project profile/TtyProfile.csproj --configuration Release -- --fetch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+      - name: Publish generated output
+        env:
+          PROFILE_BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg data/profile.json README.md
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "chore: refresh TTY telemetry"
+          git push origin "HEAD:$PROFILE_BRANCH"
