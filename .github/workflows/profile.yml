@@ -1,12 +1,12 @@
-name: Refresh TTY profile
+name: Refresh profile
 
 on:
   push:
-    branches: [main, profile/tty]
-    paths: ["profile/**", "README.md", ".github/workflows/profile.yml"]
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/profile.yml"]
   pull_request:
     branches: [main]
-    paths: ["profile/**", "README.md", ".github/workflows/profile.yml"]
+    paths: ["scripts/**", ".github/workflows/profile.yml"]
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
@@ -15,24 +15,20 @@ permissions:
   contents: read
 
 concurrency:
-  group: tty-profile-${{ github.ref }}
+  group: profile-${{ github.ref }}
   cancel-in-progress: false
-
-env:
-  DOTNET_NOLOGO: true
-  DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          dotnet-version: "10.0.x"
-      - run: dotnet build profile/TtyProfile.csproj --configuration Release
-      - run: dotnet run --project profile/TtyProfile.csproj --configuration Release --no-build -- --self-test
+          node-version: 24
+      # Renders every design from the committed snapshot: catches broken renderers without the API.
+      - run: node scripts/build.mjs --all --dry-run
 
   refresh:
     needs: validate
@@ -42,26 +38,25 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          ref: ${{ github.ref_name }}
-      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6
-        with:
-          dotnet-version: "10.0.x"
-      - name: Fetch GitHub data and render the terminal
-        run: dotnet run --project profile/TtyProfile.csproj --configuration Release -- --fetch
+          node-version: 24
+
+      # The default token sees public repositories only, which is what the profile shows.
+      - name: Fetch stats
+        run: node scripts/fetch-stats.mjs
         env:
-          GH_TOKEN: ${{ github.token }}
-          PROFILE_LOGIN: ${{ github.repository_owner }}
-      - name: Publish generated output
-        env:
-          PROFILE_BRANCH: ${{ github.ref_name }}
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Render images
+        run: node scripts/build.mjs
+
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/*.svg data/profile.json README.md
-          if git diff --cached --quiet; then
-            exit 0
-          fi
-          git commit -m "chore: refresh TTY telemetry"
-          git push origin "HEAD:$PROFILE_BRANCH"
+          git add -A data assets README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh profile stats"
+          git push

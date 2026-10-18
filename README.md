@@ -1,97 +1,74 @@
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/boot-mobile.svg">
-  <img src="assets/boot.svg" width="960" alt="4booser — Alex, a backend developer in Kyiv. C#, ASP.NET Core, TypeScript and PostgreSQL. Welcome to tty01.">
-</picture>
+<p align="center">
+  <img src="assets/hero.svg" width="100%" alt="Alex's Hyprland desktop on Arch Linux. fastfetch in kitty: Backend-first developer in Kyiv, Ukraine, 3+ years of experience, and the stack. Side windows: what is being built now and a one-year contribution graph.">
+</p>
 
 <p align="center">
   <a href="#-whoami">whoami</a> ·
-  <a href="#-stats---window365d">stats</a> ·
+  <a href="#-btop">stats</a> ·
   <a href="#-ls-projects">projects</a> ·
-  <a href="#-cat-stackconf">stack</a> ·
+  <a href="#-eza---tree-stack">stack</a> ·
+  <a href="#-cat-engineeringnotes">notes</a> ·
   <a href="#-connect">connect</a>
 </p>
 
 ### `$ whoami`
 
 ```ini
-name       = Alex / 4booser
-location   = Kyiv, Ukraine
-focus      = backend engineering + full-stack applications
-building   = Shifter, Polypsy, and the tools around them
-approach   = follow the request; understand the failure
-offscreen  = basketball, music, making Linux feel like home
+name      = Alex / 4booser
+location  = Kyiv, Ukraine
+focus     = backend engineering + full-stack applications
+building  = Shifter, Polypsy, and the tools around them
+interests = API design, authentication, Linux, debugging
+approach  = follow the request; understand the failure
+offscreen = basketball, music, making Linux feel like home
 ```
 
-I build applications from the API and database up to the interface.
-I like understanding what happens between a click, a request, and a saved record —
-especially when one of those steps goes wrong.
+I build applications from the API and database up to the interface. I like understanding what happens between a click, a request, and a saved record, especially when one of those steps goes wrong.
 
-### `$ stats --window=365d`
+### `$ btop`
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/telemetry-mobile.svg">
-  <img src="assets/telemetry.svg" width="960" alt="GitHub telemetry: contributions, active days, current and longest streaks, public repositories, stars, followers, yearly contribution calendar and the last 30 days. A text summary follows.">
-</picture>
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 2903 contributions in the last 365 days, peak 158 on 26 Sep 2026, 33-day current streak. Languages led by TypeScript 86.5%, C# 8.8%, JavaScript 2.7%.">
 
 <details>
-<summary><code>cat /var/log/github.summary</code> — text output & metric definitions</summary>
-
-<!-- TELEMETRY:START -->
-Snapshot: **2026-10-18 18:53 UTC**. Window: **2025-10-19 → 2026-10-18**.
+<summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions / 365 days | 2,903 |
-| Active days / 365 days | 109 |
-| Current streak / days | 33 |
-| Longest streak / days within window | 33 |
-| Contributions / 30 days | 1,248 |
-| Active days / 30 days | 30 |
+| Contributions, last 365 days | 2,903 |
+| Active days, last 365 days | 109 |
+| Current streak, days | 33 |
+| Longest streak, days | 33 |
+| Busiest day | 158 on 26 Sep 2026 |
 | Commit contributions | 2,186 |
-| Pull requests | 16 |
-| Issues | 207 |
-| Code reviews | 4 |
-| Public repositories / including forks | 4 |
-| Stars / public owned non-fork repos | 1 |
-| Followers | 2 |
+| Pull requests (merged) | 43 (37) |
+| Issues | 210 |
+| Public repositories, own | 2 |
 
-GitHub member since **2023-07-08**.
-
-| Language | Code bytes |
+| Language | Share of code |
 | :-- | --: |
-| TypeScript | 19,669,867 |
-| C# | 2,003,804 |
-| JavaScript | 611,458 |
-| Shell | 178,902 |
-| CSS | 155,143 |
-| Swift | 56,419 |
-| PLpgSQL | 53,968 |
-| Dockerfile | 13,578 |
-| Batchfile | 9,306 |
-| Ruby | 1,369 |
-| HTML | 990 |
-<!-- TELEMETRY:END -->
+| TypeScript | 86.5% |
+| C# | 8.8% |
+| JavaScript | 2.7% |
+| Shell | 0.8% |
+| CSS | 0.7% |
+| Swift | 0.2% |
+| PLpgSQL | 0.2% |
 
-An **active day** has at least one contribution recorded by GitHub. It is not a
-measurement of working hours. The current streak includes yesterday if today is
-still empty; the longest streak is measured inside the displayed 365-day window.
-Calendar dates are used as returned by GitHub, with the snapshot ending on the UTC date.
-The contribution calendar can include anonymous private activity if it is visible
-on the profile; the activity breakdown covers contributions accessible to the token.
-Repository names, stars, and language data are taken only from public repositories.
-
-[Snapshot data](data/profile.json) · [How the generator works](docs/telemetry.md)
+Snapshot 18 Oct 2026, 23:53 Kyiv time. The calendar is GitHub's own and includes
+private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
 
 ### `$ ls ~/projects`
 
-**[01 / Shifter](https://github.com/4booser/Shifter)**
+<p align="center">
+  <a href="https://github.com/4booser/Shifter"><img src="assets/project-shifter.svg" width="49%" alt="Shifter: Shift planning and earnings tracking for people paid by the hour."></a>
+  <a href="https://github.com/4booser/Polypsy"><img src="assets/project-polypsy.svg" width="49%" alt="Polypsy: A pilot platform for assessment workflows. In late beta: clinical validation is still ahead."></a>
+</p>
 
-Shift planning and earnings tracking for people paid by the hour.
+**[Shifter](https://github.com/4booser/Shifter)**
+
 A calendar, overtime calculations, tips, deductions, and a clear picture of what a working day earns.
-
-`C#` `ASP.NET Core / .NET 10` `React / Next.js` `PostgreSQL` `Docker`
 
 <details>
 <summary><code>less projects/shifter.notes</code></summary>
@@ -105,13 +82,9 @@ A calendar, overtime calculations, tips, deductions, and a clear picture of what
 
 </details>
 
-**[02 / Polypsy](https://github.com/4booser/Polypsy)**
+**[Polypsy](https://github.com/4booser/Polypsy)**
 
-A pilot platform for assessment workflows: questionnaires, scoring, appointments,
-role-based workspaces, and a shared web/mobile core. Currently in late beta;
-clinical validation and clinical use are still ahead.
-
-`TypeScript` `Bun / Hono` `React / React Native` `PostgreSQL` `Drizzle`
+Questionnaires, scoring, appointments, role-based workspaces, and a shared web/mobile core. Currently in late beta; clinical validation and clinical use are still ahead.
 
 <details>
 <summary><code>less projects/polypsy.notes</code></summary>
@@ -125,35 +98,14 @@ clinical validation and clinical use are still ahead.
 
 </details>
 
-**[03 / This profile](https://github.com/4booser/4booser/tree/main/profile)**
+**[This profile](https://github.com/4booser/4booser/tree/main/scripts)**
 
-A dependency-free C# tool that reads GitHub data and renders this terminal's SVG
-telemetry. Includes streak calculations, a contribution calendar, language statistics,
-and scheduled updates through GitHub Actions.
+A dependency-free Node script reads the GitHub API and draws every image on this page.
+GitHub Actions redraws it every six hours.
 
-### `$ cat stack.conf`
+### `$ eza --tree ~/stack`
 
-```toml
-[backend]
-primary = ["C#", "ASP.NET Core", "Entity Framework Core"]
-also    = ["TypeScript", "Bun", "Hono"]
-
-[interface]
-web     = ["React", "Next.js", "Angular"]
-mobile  = ["React Native", "Expo"]
-
-[data_and_delivery]
-data    = ["PostgreSQL", "Drizzle"]
-ship    = ["Docker", "GitHub Actions", "Git"]
-
-[interests]
-topics  = ["API design", "authentication", "Linux", "debugging"]
-```
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/languages-mobile.svg">
-  <img src="assets/languages.svg" width="960" alt="Languages by code bytes in public, owned, non-fork, non-archived repositories, excluding this profile. This measures repository content, not proficiency.">
-</picture>
+<img src="assets/stack.svg" width="100%" alt="Stack as a directory tree: backend: .NET 10, ASP.NET Core, EF Core, MediatR, NestJS, Hono, Bun, Drizzle; frontend: React 19, Next.js, TypeScript, TanStack, Tailwind v4, Vite, Angular, RxJS; mobile: Expo, React Native, Flutter, SwiftUI; data: PostgreSQL, Row-level security, Zod; infra: Docker, GitHub Actions, Turborepo, Vercel, Serilog; quality: xUnit, Vitest, Jest, Playwright; workstation: Arch Linux, Hyprland, Quickshell, kitty, zsh, Claude Code, Git">
 
 ### `$ cat engineering.notes`
 
@@ -163,14 +115,12 @@ topics  = ["API design", "authentication", "Linux", "debugging"]
 - Understand the trade-off well enough to explain it in plain language.
 
 <details>
-<summary><code>git log --public</code> — latest repository activity</summary>
+<summary><code>git log --public</code></summary>
 
-<!-- RECENT:START -->
-| Repository | Last push / UTC |
+| Repository | Last push, Kyiv time |
 | :-- | :-- |
-| [Polypsy](https://github.com/4booser/Polypsy) | 2026-10-17 18:07 |
-| [Shifter](https://github.com/4booser/Shifter) | 2026-10-12 04:45 |
-<!-- RECENT:END -->
+| [Polypsy](https://github.com/4booser/Polypsy) | 17 Oct 2026, 21:07 |
+| [Shifter](https://github.com/4booser/Shifter) | 12 Oct 2026, 07:45 |
 
 [Public pull requests](https://github.com/search?q=author%3A4booser+is%3Apr&type=pullrequests) ·
 [All public repositories](https://github.com/4booser?tab=repositories)
@@ -179,10 +129,15 @@ topics  = ["API design", "authentication", "Linux", "debugging"]
 
 ### `$ connect`
 
-[GitHub / @4booser](https://github.com/4booser) ·
-[Email / 4booser@gmail.com](mailto:4booser@gmail.com)
+<p>
+  <a href="mailto:4booser@gmail.com"><img src="assets/link-email.svg" height="34" alt="email: 4booser@gmail.com"></a>
+  <a href="https://t.me/abooser"><img src="assets/link-telegram.svg" height="34" alt="telegram: @abooser"></a>
+  <a href="https://linkedin.com/in/oleksii-chepurniak"><img src="assets/link-linkedin.svg" height="34" alt="linkedin: oleksii-chepurniak"></a>
+</p>
 
 ```console
 4booser@github:~$ next
 Keep building. Keep asking why.
 ```
+
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 18 Oct 2026, 23:53 Kyiv time.</sub>

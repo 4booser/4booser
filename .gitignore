@@ -3,3 +3,6 @@
 .env
 .env.*
 *.user
+
+# node scripts/build.mjs --all
+preview/
