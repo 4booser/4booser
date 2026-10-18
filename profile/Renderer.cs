@@ -116,18 +116,28 @@ public static class Renderer
         c.Text(x - 41, y + step + size - 2, "M", font, Muted);
         c.Text(x - 41, y + step * 3 + size - 2, "W", font, Muted);
         c.Text(x - 41, y + step * 5 + size - 2, "F", font, Muted);
+        var candidates = new List<(int Column, DateOnly Date)>();
         var previousMonth = -1;
-        var lastLabel = -4;
+        for (var column = 0; column < columns; column++)
+        {
+            var middle = start.AddDays((column + offset) * 7 + 3);
+            if (middle.Month != previousMonth) candidates.Add((column, middle));
+            previousMonth = middle.Month;
+        }
+        var labelSpace = (int)Math.Ceiling((font * 3 * 0.61 + 7) / step);
+        var lastLabel = -labelSpace;
+        for (var i = 0; i < candidates.Count; i++)
+        {
+            var label = candidates[i];
+            // Omit a short leading partial month instead of crowding the next month.
+            if (i == 0 && candidates.Count > 1 && candidates[1].Column - label.Column < labelSpace) continue;
+            if (label.Column - lastLabel < labelSpace || (columns - label.Column) * step < font * 3 * 0.61) continue;
+            c.Text(x + label.Column * step, y - 14, label.Date.ToString("MMM", CultureInfo.InvariantCulture), font, Muted);
+            lastLabel = label.Column;
+        }
         for (var column = 0; column < columns; column++)
         {
             var sunday = start.AddDays((column + offset) * 7);
-            var middle = sunday.AddDays(3);
-            if (middle.Month != previousMonth && column - lastLabel >= 2 && column < columns - 1)
-            {
-                c.Text(x + column * step, y - 14, middle.ToString("MMM", CultureInfo.InvariantCulture), font, Muted);
-                lastLabel = column;
-            }
-            previousMonth = middle.Month;
             for (var row = 0; row < 7; row++)
             {
                 var date = sunday.AddDays(row);
