@@ -37,7 +37,7 @@ especially when one of those steps goes wrong.
 <summary><code>cat /var/log/github.summary</code> — text output & metric definitions</summary>
 
 <!-- TELEMETRY:START -->
-Snapshot: **2026-10-18 18:48 UTC**. Window: **2025-10-19 → 2026-10-18**.
+Snapshot: **2026-10-18 18:52 UTC**. Window: **2025-10-19 → 2026-10-18**.
 
 | Metric | Value |
 | :-- | --: |
