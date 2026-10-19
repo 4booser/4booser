@@ -27,34 +27,34 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 2906 contributions in the last 365 days, peak 158 on 26 Sep 2026, 33-day current streak. Languages led by TypeScript 86.5%, C# 8.8%, JavaScript 2.7%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3316 contributions in the last 365 days, peak 220 on 19 Oct 2026, 34-day current streak. Languages led by TypeScript 88.9%, C# 7.3%, JavaScript 2.3%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 2,906 |
-| Active days, last 365 days | 109 |
-| Current streak, days | 33 |
-| Longest streak, days | 33 |
-| Busiest day | 158 on 26 Sep 2026 |
-| Commit contributions | 2,189 |
-| Pull requests (merged) | 16 (15) |
+| Contributions, last 365 days | 3,316 |
+| Active days, last 365 days | 110 |
+| Current streak, days | 34 |
+| Longest streak, days | 34 |
+| Busiest day | 220 on 19 Oct 2026 |
+| Commit contributions | 2,594 |
+| Pull requests (merged) | 20 (17) |
 | Issues | 207 |
-| Public repositories, own | 2 |
+| Public repositories, own | 3 |
 
 | Language | Share of code |
 | :-- | --: |
-| TypeScript | 86.5% |
-| C# | 8.8% |
-| JavaScript | 2.7% |
-| Shell | 0.8% |
-| CSS | 0.7% |
+| TypeScript | 88.9% |
+| C# | 7.3% |
+| JavaScript | 2.3% |
+| Shell | 0.7% |
+| CSS | 0.5% |
 | Swift | 0.2% |
 | PLpgSQL | 0.2% |
 
-Snapshot 19 Oct 2026, 07:48 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 19 Oct 2026, 16:27 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -119,8 +119,8 @@ GitHub Actions redraws it every six hours.
 
 | Repository | Last push, Kyiv time |
 | :-- | :-- |
+| [Polypsy](https://github.com/4booser/Polypsy) | 19 Oct 2026, 13:36 |
 | [Shifter](https://github.com/4booser/Shifter) | 19 Oct 2026, 04:48 |
-| [Polypsy](https://github.com/4booser/Polypsy) | 18 Oct 2026, 23:59 |
 
 [Public pull requests](https://github.com/search?q=author%3A4booser+is%3Apr&type=pullrequests) ·
 [All public repositories](https://github.com/4booser?tab=repositories)
@@ -140,4 +140,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 19 Oct 2026, 07:48 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 19 Oct 2026, 16:27 Kyiv time.</sub>
