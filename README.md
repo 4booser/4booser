@@ -27,34 +27,35 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3316 contributions in the last 365 days, peak 220 on 19 Oct 2026, 34-day current streak. Languages led by TypeScript 88.9%, C# 7.3%, JavaScript 2.3%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3343 contributions in the last 365 days, peak 247 on 19 Oct 2026, 34-day current streak. Languages led by TypeScript 86.6%, C# 7.2%, HTML 2.5%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 3,316 |
+| Contributions, last 365 days | 3,343 |
 | Active days, last 365 days | 110 |
 | Current streak, days | 34 |
 | Longest streak, days | 34 |
-| Busiest day | 220 on 19 Oct 2026 |
-| Commit contributions | 2,594 |
-| Pull requests (merged) | 20 (17) |
+| Busiest day | 247 on 19 Oct 2026 |
+| Commit contributions | 2,622 |
+| Pull requests (merged) | 25 (22) |
 | Issues | 207 |
 | Public repositories, own | 3 |
 
 | Language | Share of code |
 | :-- | --: |
-| TypeScript | 88.9% |
-| C# | 7.3% |
-| JavaScript | 2.3% |
-| Shell | 0.7% |
+| TypeScript | 86.6% |
+| C# | 7.2% |
+| HTML | 2.5% |
+| JavaScript | 2.2% |
+| Shell | 0.6% |
 | CSS | 0.5% |
 | Swift | 0.2% |
 | PLpgSQL | 0.2% |
 
-Snapshot 19 Oct 2026, 16:27 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 19 Oct 2026, 01:25 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -140,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 19 Oct 2026, 16:27 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 19 Oct 2026, 01:25 Kyiv time.</sub>
