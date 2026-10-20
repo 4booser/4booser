@@ -27,35 +27,35 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3349 contributions in the last 365 days, peak 247 on 19 Oct 2026, 35-day current streak. Languages led by TypeScript 86.6%, C# 7.2%, HTML 2.5%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3357 contributions in the last 365 days, peak 250 on 19 Oct 2026, 35-day current streak. Languages led by TypeScript 85.8%, C# 7.1%, HTML 3.4%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 3,349 |
+| Contributions, last 365 days | 3,357 |
 | Active days, last 365 days | 111 |
 | Current streak, days | 35 |
 | Longest streak, days | 35 |
-| Busiest day | 247 on 19 Oct 2026 |
-| Commit contributions | 2,622 |
-| Pull requests (merged) | 25 (22) |
+| Busiest day | 250 on 19 Oct 2026 |
+| Commit contributions | 2,629 |
+| Pull requests (merged) | 25 (23) |
 | Issues | 207 |
-| Public repositories, own | 3 |
+| Public repositories, own | 4 |
 
 | Language | Share of code |
 | :-- | --: |
-| TypeScript | 86.6% |
-| C# | 7.2% |
-| HTML | 2.5% |
+| TypeScript | 85.8% |
+| C# | 7.1% |
+| HTML | 3.4% |
 | JavaScript | 2.2% |
 | Shell | 0.6% |
-| CSS | 0.5% |
+| CSS | 0.4% |
 | Swift | 0.2% |
 | PLpgSQL | 0.2% |
 
-Snapshot 20 Oct 2026, 14:46 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 20 Oct 2026, 20:15 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 20 Oct 2026, 14:46 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 20 Oct 2026, 20:15 Kyiv time.</sub>
