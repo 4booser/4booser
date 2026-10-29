@@ -27,17 +27,17 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3890 contributions in the last 365 days, peak 251 on 19 Oct 2026, 43-day current streak. Languages led by TypeScript 86.5%, C# 6.5%, HTML 3.6%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3891 contributions in the last 365 days, peak 251 on 19 Oct 2026, 44-day current streak. Languages led by TypeScript 86.5%, C# 6.5%, HTML 3.6%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 3,890 |
-| Active days, last 365 days | 119 |
-| Current streak, days | 43 |
-| Longest streak, days | 43 |
+| Contributions, last 365 days | 3,891 |
+| Active days, last 365 days | 120 |
+| Current streak, days | 44 |
+| Longest streak, days | 44 |
 | Busiest day | 251 on 19 Oct 2026 |
 | Commit contributions | 2,966 |
 | Pull requests (merged) | 35 (34) |
@@ -55,7 +55,7 @@ I build applications from the API and database up to the interface. I like under
 | PLpgSQL | 0.2% |
 | Swift | 0.2% |
 
-Snapshot 28 Oct 2026, 00:39 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 29 Oct 2026, 07:54 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 28 Oct 2026, 00:39 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 29 Oct 2026, 07:54 Kyiv time.</sub>
