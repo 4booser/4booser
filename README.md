@@ -55,7 +55,7 @@ I build applications from the API and database up to the interface. I like under
 | PLpgSQL | 0.2% |
 | Swift | 0.2% |
 
-Snapshot 1 Nov 2026, 00:07 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 2 Nov 2026, 08:17 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -120,7 +120,7 @@ GitHub Actions redraws it every six hours.
 
 | Repository | Last push, Kyiv time |
 | :-- | :-- |
-| [Shifter](https://github.com/4booser/Shifter) | 1 Nov 2026, 21:28 |
+| [Shifter](https://github.com/4booser/Shifter) | 2 Nov 2026, 03:46 |
 | [Polypsy](https://github.com/4booser/Polypsy) | 31 Oct 2026, 16:38 |
 
 [Public pull requests](https://github.com/search?q=author%3A4booser+is%3Apr&type=pullrequests) ·
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 1 Nov 2026, 00:07 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 2 Nov 2026, 08:17 Kyiv time.</sub>
