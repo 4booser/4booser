@@ -27,7 +27,7 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3918 contributions in the last 365 days, peak 251 on 19 Oct 2026, 49-day current streak. Languages led by TypeScript 86.3%, C# 6.4%, HTML 3.5%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3918 contributions in the last 365 days, peak 251 on 19 Oct 2026, 0-day current streak. Languages led by TypeScript 86.3%, C# 6.4%, HTML 3.5%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
@@ -36,7 +36,7 @@ I build applications from the API and database up to the interface. I like under
 | :-- | --: |
 | Contributions, last 365 days | 3,918 |
 | Active days, last 365 days | 125 |
-| Current streak, days | 49 |
+| Current streak, days | 0 |
 | Longest streak, days | 49 |
 | Busiest day | 251 on 19 Oct 2026 |
 | Commit contributions | 2,987 |
@@ -55,7 +55,7 @@ I build applications from the API and database up to the interface. I like under
 | PLpgSQL | 0.2% |
 | Swift | 0.2% |
 
-Snapshot 4 Nov 2026, 21:49 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 5 Nov 2026, 08:55 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 4 Nov 2026, 21:49 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 5 Nov 2026, 08:55 Kyiv time.</sub>
