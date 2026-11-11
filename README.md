@@ -27,35 +27,35 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 3963 contributions in the last 365 days, peak 251 on 19 Oct 2026, 0-day current streak. Languages led by TypeScript 85.9%, C# 7.0%, HTML 3.5%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 4058 contributions in the last 365 days, peak 251 on 19 Oct 2026, 57-day current streak. Languages led by TypeScript 85.8%, C# 7.0%, HTML 3.4%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 3,963 |
-| Active days, last 365 days | 131 |
-| Current streak, days | 0 |
-| Longest streak, days | 55 |
+| Contributions, last 365 days | 4,058 |
+| Active days, last 365 days | 133 |
+| Current streak, days | 57 |
+| Longest streak, days | 57 |
 | Busiest day | 251 on 19 Oct 2026 |
-| Commit contributions | 3,003 |
-| Pull requests (merged) | 40 (39) |
+| Commit contributions | 3,015 |
+| Pull requests (merged) | 44 (43) |
 | Issues | 207 |
 | Public repositories, own | 5 |
 
 | Language | Share of code |
 | :-- | --: |
-| TypeScript | 85.9% |
+| TypeScript | 85.8% |
 | C# | 7.0% |
-| HTML | 3.5% |
+| HTML | 3.4% |
 | JavaScript | 2.0% |
+| Shell | 0.8% |
 | CSS | 0.7% |
-| Shell | 0.7% |
 | PLpgSQL | 0.2% |
 | Swift | 0.2% |
 
-Snapshot 11 Nov 2026, 08:35 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 11 Nov 2026, 21:40 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -120,7 +120,7 @@ GitHub Actions redraws it every six hours.
 
 | Repository | Last push, Kyiv time |
 | :-- | :-- |
-| [Shifter](https://github.com/4booser/Shifter) | 9 Nov 2026, 20:32 |
+| [Shifter](https://github.com/4booser/Shifter) | 11 Nov 2026, 21:08 |
 | [Polypsy](https://github.com/4booser/Polypsy) | 31 Oct 2026, 16:38 |
 
 [Public pull requests](https://github.com/search?q=author%3A4booser+is%3Apr&type=pullrequests) ·
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 11 Nov 2026, 08:35 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 11 Nov 2026, 21:40 Kyiv time.</sub>
