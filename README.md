@@ -27,17 +27,17 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 4058 contributions in the last 365 days, peak 251 on 19 Oct 2026, 57-day current streak. Languages led by TypeScript 85.8%, C# 7.0%, HTML 3.4%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 4080 contributions in the last 365 days, peak 251 on 19 Oct 2026, 58-day current streak. Languages led by TypeScript 85.6%, C# 7.3%, HTML 3.4%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 4,058 |
-| Active days, last 365 days | 133 |
-| Current streak, days | 57 |
-| Longest streak, days | 57 |
+| Contributions, last 365 days | 4,080 |
+| Active days, last 365 days | 134 |
+| Current streak, days | 58 |
+| Longest streak, days | 58 |
 | Busiest day | 251 on 19 Oct 2026 |
 | Commit contributions | 3,015 |
 | Pull requests (merged) | 44 (43) |
@@ -46,16 +46,16 @@ I build applications from the API and database up to the interface. I like under
 
 | Language | Share of code |
 | :-- | --: |
-| TypeScript | 85.8% |
-| C# | 7.0% |
+| TypeScript | 85.6% |
+| C# | 7.3% |
 | HTML | 3.4% |
-| JavaScript | 2.0% |
+| JavaScript | 1.9% |
 | Shell | 0.8% |
 | CSS | 0.7% |
 | PLpgSQL | 0.2% |
 | Swift | 0.2% |
 
-Snapshot 11 Nov 2026, 21:40 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 12 Nov 2026, 09:19 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 11 Nov 2026, 21:40 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 12 Nov 2026, 09:19 Kyiv time.</sub>
