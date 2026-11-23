@@ -27,19 +27,19 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 6076 contributions in the last 365 days, peak 867 on 12 Nov 2026, 67-day current streak. Languages led by TypeScript 85.2%, C# 7.7%, HTML 3.4%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 6077 contributions in the last 365 days, peak 867 on 12 Nov 2026, 68-day current streak. Languages led by TypeScript 85.2%, C# 7.7%, HTML 3.4%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 6,076 |
-| Active days, last 365 days | 143 |
-| Current streak, days | 67 |
-| Longest streak, days | 67 |
+| Contributions, last 365 days | 6,077 |
+| Active days, last 365 days | 144 |
+| Current streak, days | 68 |
+| Longest streak, days | 68 |
 | Busiest day | 867 on 12 Nov 2026 |
-| Commit contributions | 3,019 |
+| Commit contributions | 3,020 |
 | Pull requests (merged) | 45 (44) |
 | Issues | 207 |
 | Public repositories, own | 5 |
@@ -55,7 +55,7 @@ I build applications from the API and database up to the interface. I like under
 | PLpgSQL | 0.2% |
 | Swift | 0.2% |
 
-Snapshot 22 Nov 2026, 21:46 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 23 Nov 2026, 09:47 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -120,7 +120,7 @@ GitHub Actions redraws it every six hours.
 
 | Repository | Last push, Kyiv time |
 | :-- | :-- |
-| [Shifter](https://github.com/4booser/Shifter) | 16 Nov 2026, 03:48 |
+| [Shifter](https://github.com/4booser/Shifter) | 23 Nov 2026, 03:48 |
 | [Polypsy](https://github.com/4booser/Polypsy) | 31 Oct 2026, 16:38 |
 
 [Public pull requests](https://github.com/search?q=author%3A4booser+is%3Apr&type=pullrequests) ·
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 22 Nov 2026, 21:46 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 23 Nov 2026, 09:47 Kyiv time.</sub>
