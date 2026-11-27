@@ -27,19 +27,19 @@ I build applications from the API and database up to the interface. I like under
 
 ### `$ btop`
 
-<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 6081 contributions in the last 365 days, peak 867 on 12 Nov 2026, 72-day current streak. Languages led by TypeScript 85.2%, C# 7.7%, HTML 3.4%.">
+<img src="assets/stats.svg" width="100%" alt="GitHub activity in btop: 6082 contributions in the last 365 days, peak 867 on 12 Nov 2026, 73-day current streak. Languages led by TypeScript 85.2%, C# 7.7%, HTML 3.4%.">
 
 <details>
 <summary><code>cat /var/log/github.summary</code></summary>
 
 | Metric | Value |
 | :-- | --: |
-| Contributions, last 365 days | 6,081 |
-| Active days, last 365 days | 148 |
-| Current streak, days | 72 |
-| Longest streak, days | 72 |
+| Contributions, last 365 days | 6,082 |
+| Active days, last 365 days | 149 |
+| Current streak, days | 73 |
+| Longest streak, days | 73 |
 | Busiest day | 867 on 12 Nov 2026 |
-| Commit contributions | 3,024 |
+| Commit contributions | 3,025 |
 | Pull requests (merged) | 45 (44) |
 | Issues | 207 |
 | Public repositories, own | 5 |
@@ -55,7 +55,7 @@ I build applications from the API and database up to the interface. I like under
 | PLpgSQL | 0.2% |
 | Swift | 0.2% |
 
-Snapshot 27 Nov 2026, 10:43 Kyiv time. The calendar is GitHub's own and includes
+Snapshot 27 Nov 2026, 23:24 Kyiv time. The calendar is GitHub's own and includes
 private activity the profile shows; languages, repositories and stars cover public, own, non-fork repositories only.
 
 </details>
@@ -141,4 +141,4 @@ GitHub Actions redraws it every six hours.
 Keep building. Keep asking why.
 ```
 
-<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 27 Nov 2026, 10:43 Kyiv time.</sub>
+<sub>Every image here is an SVG drawn from the GitHub API by <code>scripts/build.mjs</code>. Last build: 27 Nov 2026, 23:24 Kyiv time.</sub>
